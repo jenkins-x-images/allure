@@ -14,7 +14,7 @@ ARG INSTALL_DIR=/opt/allure
 
 RUN cd \
     && apt-get update \
-    && apt-get install -y curl \
+    && apt-get install -y curl git-all \
     && curl -fsSL -o ${TMPFILE} ${URL} \
     && unzip -q ${TMPFILE} -d ${INSTALL_DIR} \
     && rm ${TMPFILE} \
